@@ -11,10 +11,11 @@
             <!-- Desktop Links -->
             <div class="hidden sm:flex sm:items-center sm:ml-10 space-x-4">
                 <a href="{{ route('dashboard') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Social Network</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">File Manager</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Task List</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Todo App</a>
+                <a href="/" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Chat Room</a>
+                <a href="https://pouyait.com/files" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">File Manager</a>
+                <a href="https://pouyait.com/resumes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resume Maker</a>
+                <a href="https://pouyait.com/surveys" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Survey Builder</a>
+                <a href="https://pouyait.com/codes" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Code Reminder</a>
 
                 <!-- More Dropdown -->
                 <div class="relative" x-data="{ dropdownOpen: false }">
@@ -25,12 +26,14 @@
                         </svg>
                     </button>
                     <div x-show="dropdownOpen" @click.away="dropdownOpen = false" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Expense Tracker</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">PDF Tools</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meme Generator</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Scheduler</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Resume Maker</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mini Games</a>
+                        <a href="/expenses" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Expense Tracker</a>
+                        <a href="/pdf-tools" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">PDF Tools</a>
+                        <a href="/meme-generator" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meme Generator</a>
+                        <a href="/scheduler" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Scheduler</a>
+                        <a href="/mini-games" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mini Games</a>
+                        <a href="/task-list" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Task List</a>
+                        <a href="/todo-app" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Todo App</a>
+                        <a href="/word-lists" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English & German Word Lists</a>
                     </div>
                 </div>
             </div>
